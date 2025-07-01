@@ -1,0 +1,21 @@
+name: 05 - 2 - Event Filters and Activity Types
+
+on:
+  pull_request:
+    # types: [closed]
+    types:
+      - closed
+    # This means that the workflow will run whenever a pull request is closed.
+    # branches: [main]
+    branches:
+      - main
+    # This means that the workflow will run whenever a pull request is closed against the main branch
+
+ 
+
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo Message
+        run: echo "Running whenever a PR is closed."
