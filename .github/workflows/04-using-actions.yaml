@@ -7,6 +7,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run: 
+        # shell: bash
+        working-directory: 04-using-actions/react-app
     steps:
     # 0. Checkout the code from the repository
     # 1. Install dependencies of our React application
@@ -24,8 +28,11 @@ jobs:
         with:
           node-version: '20.x'
 
-          
+
       - name: Install Dependencies
         run: npm ci
-        working-directory: 04-using-actions/react-app
+        # working-directory: 04-using-actions/react-app
 
+      - name: Run Tests
+        run: npm run test
+        # working-directory: 04-using-actions/react-app
