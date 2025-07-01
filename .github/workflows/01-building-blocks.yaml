@@ -1,7 +1,11 @@
 name: 01 - Building Blocks
 
-on: push
-   
+# on: push
+on: workflow_dispatch
+# This means that the workflow will run on every push to the main branch and can also be
+# triggered manually via the GitHub UI.
+
+
 jobs:
   echo-hello:
     runs-on: ubuntu-latest
