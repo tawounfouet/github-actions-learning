@@ -14,8 +14,3 @@ jobs:
       - name: Show the trigger
         run: |
           echo "I have been triggered by a(n) ${{ github.event_name }} event."
-      - name: Show the event payload
-        run: |
-          echo "The event payload is:"
-          echo "${{ toJson(github.event) }}"
-          
