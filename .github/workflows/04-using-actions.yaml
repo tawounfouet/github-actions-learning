@@ -8,6 +8,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    # 0. Checkout the code from the repository
+    # 1. Install dependencies of our React application
+    # 2. Execute the automated tests
       - name: Checkout Code
         uses: actions/checkout@v4
 
