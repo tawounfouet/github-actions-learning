@@ -16,10 +16,9 @@ jobs:
         run: |
           echo "I will succeed"
           echo 0
-      
-      - name: Fail step
-        run: |
-            echo "I will fail"
-            exit 1
+      # - name: Fail step
+      #   run: |
+      #       echo "I will fail"
+      #       exit 1
       - name: Say goodbye
         run: echo "Goodbye!"
